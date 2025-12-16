@@ -6,7 +6,7 @@
 @section('content')
     <div class="pt-12">
       <!-- Gambar -->
-      <div class="px-4 md:px-10 lg:px-[80px]">
+      <div class="px-4 md:px-[48px]">
         <a href="{{ route('berita.index') }}"  class="inline-flex items-center gap-4 px-3 py-3 bg-[#F6F7F4] rounded-[16px] mb-[30px]">
             <img src="{{ asset('image/icon/arrow-left.svg') }}" class="w-6 h-6" />
             <span class="text-[14px] font-medium text-[#022512]">Kembali</span>
@@ -17,7 +17,7 @@
 
       <!-- Konten -->
       <div class="w-full">
-        <div class="px-4 md:px-10 mx-auto max-w-[898px] mb-[50px] md:mb-[100px]">
+        <div class="px-4 md:px-[48px] mx-auto max-w-[898px] mb-[50px] md:mb-[100px]">
           <!-- Judul -->
           <h1 class="text-[28px] md:text-[36px] lg:text-[48px] leading-[120%] font-bold mb-[24px]">{{ $berita->judul }}</h1>
 
