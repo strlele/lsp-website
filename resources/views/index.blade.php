@@ -228,7 +228,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     </section>
 
     <!-- Section Mitra -->
@@ -285,49 +285,90 @@
 
         <div class="px-[16px] md:px-[48px]">
             <!-- Header Section -->
-            <div class="md:hidden lg:flex hidden flex-col md:flex-row md:items-end md:justify-between lg:flex-col lg:items-center lg:justify-center lg:text-center lg:max-w-3xl lg:mx-auto mb-8 md:mb-12 gap-4">
+            <div
+                class="md:hidden lg:flex hidden flex-col md:flex-row md:items-end md:justify-between lg:flex-col lg:items-center lg:justify-center lg:text-center lg:max-w-3xl lg:mx-auto mb-8 md:mb-12 gap-4">
                 <div>
                     <p class="text-gray-400 text-lg md:text-xl mb-2 lg:text-center text-start">Tim LSP</p>
                     <h2 class="text-[26px] md:text-[44px] font-semibold leading-tight">
                         Meet People Behind
                     </h2>
                     <p class="text-gray-500 text-base leading-relaxed mt-3">Kenali tim profesional di balik LSP SMKN 1
-                    Purwosari. Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
+                        Purwosari. Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
                 </div>
                 <div class="lg:mt-2">
                     <button
-                    class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] w-full bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
-                    <span class="leading-[150%] text-sm"> Get to know more </span>
-                    <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons" class="object-contain w-4" />
-                </button>
+                        class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] w-full bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
+                        <span class="leading-[150%] text-sm"> Get to know more </span>
+                        <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons"
+                            class="object-contain w-4" />
+                    </button>
                 </div>
             </div>
 
-        <!-- TABLET -->
-        <div class="hidden md:flex lg:hidden flex-row items-start mb-12 relative z-20 gap-10 lg:gap-0">
-            <!-- Kolom kiri -->
-            <div class="flex-1">
-                <p class="text-gray-400 text-lg md:text-xl mb-2 lg:text-center text-start">Tim LSP</p>
+            <!-- TABLET -->
+            <div class="hidden md:flex lg:hidden flex-row items-start mb-12 relative z-20 gap-10 lg:gap-0">
+                <!-- Kolom kiri -->
+                <div class="flex-1">
+                    <p class="text-gray-400 text-lg md:text-xl mb-2 lg:text-center text-start">Tim LSP</p>
                     <h2 class="text-[26px] md:text-[44px] font-semibold leading-tight">
                         Meet People Behind
                     </h2>
-                <p class="text-gray-500 text-base leading-relaxed mt-3">Kenali tim profesional di balik LSP SMKN 1
-                    Purwosari. Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
+                    <p class="text-gray-500 text-base leading-relaxed mt-3">Kenali tim profesional di balik LSP SMKN 1
+                        Purwosari. Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
 
-                <div class="flex flex-col gap-3 mt-8 w-[80%]">
-                    <button class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
-                        <span class="leading-[150%] text-sm"> Get to know more </span>
-                        <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons" class="object-contain w-4" />
-                    </button>
+                    <div class="flex flex-col gap-3 mt-8 w-[80%]">
+                        <button
+                            class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
+                            <span class="leading-[150%] text-sm"> Get to know more </span>
+                            <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons"
+                                class="object-contain w-4" />
+                        </button>
 
+                    </div>
+                </div>
+
+                <!-- Kolom kanan (foto utama) -->
+                <div class="flex-1">
+                    <div class="relative rounded-xl overflow-hidden shadow-lg">
+                        <img src="{{ asset('image/team-7.jpg') }}" alt="Raditya Wahyu S."
+                            class="w-full h-[480px] object-cover rounded-xl" />
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-[45%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full text-white px-5 pb-6">
+                            <h4 class="text-2xl font-semibold mb-1">Raditya Wahyu S.</h4>
+                            <p class="text-sm text-gray-200">Ketua LSP</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Kolom kanan (foto utama) -->
-            <div class="flex-1">
-                <div class="relative rounded-xl overflow-hidden shadow-lg">
+            <!-- MOBILE -->
+            <div class="block md:hidden mb-[18px] mt-[24px]">
+                <!-- Judul & teks -->
+                <div class="text-left space-y-4">
+                    <p class="text-gray-400 text-lg md:text-xl mb-2 lg:text-center text-start">Tim LSP</p>
+                    <h2 class="text-[26px] md:text-[44px] font-semibold leading-tight">
+                        Meet People Behind
+                    </h2>
+                    <p class="text-gray-500 text-base leading-relaxed">Kenali tim profesional di balik LSP SMKN 1 Purwosari.
+                        Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
+                </div>
+
+                <!-- Tombol -->
+                <div class="flex flex-col gap-3 mt-8">
+                    <button
+                        class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] w-full bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
+                        <span class="leading-[150%] text-sm"> Get to know more </span>
+                        <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons"
+                            class="object-contain w-4" />
+                    </button>
+                </div>
+
+                <!-- Foto utama -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg mt-10">
                     <img src="{{ asset('image/team-7.jpg') }}" alt="Raditya Wahyu S."
-                        class="w-full h-[480px] object-cover rounded-xl" />
+                        class="w-full h-[460px] object-cover rounded-xl" />
                     <div
                         class="absolute bottom-0 left-0 w-full h-[45%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
                     </div>
@@ -337,146 +378,96 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- MOBILE -->
-        <div class="block md:hidden mb-[18px] mt-[24px]">
-            <!-- Judul & teks -->
-            <div class="text-left space-y-4">
-                <p class="text-gray-400 text-lg md:text-xl mb-2 lg:text-center text-start">Tim LSP</p>
-                <h2 class="text-[26px] md:text-[44px] font-semibold leading-tight">
-                    Meet People Behind
-                </h2>
-                <p class="text-gray-500 text-base leading-relaxed">Kenali tim profesional di balik LSP SMKN 1 Purwosari.
-                    Kami bekerja bersama untuk menjaga mutu dan kredibilitas sertifikasi.</p>
-            </div>
+            <!-- FOTO-FOTO KECIL (DIGABUNG UNTUK MOBILE & TABLET) -->
+            <div
+                class="lg:hidden grid grid-cols-2 md:grid-cols-3 md:gap-x-[30px] gap-x-[14px] md:gap-y-[14px] gap-y-[16.67px] pb-[6px]">
+                <!-- Foto 1 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-1.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
+                </div>
 
-            <!-- Tombol -->
-            <div class="flex flex-col gap-3 mt-8">
-                <button
-                    class="rounded-lg flex items-center justify-center gap-2 px-6 py-[13px] w-full bg-[#FFF8E0] text-[#FFC300] font-medium hover:bg-[#FFF9D9] transition">
-                    <span class="leading-[150%] text-sm"> Get to know more </span>
-                    <img src="{{ asset('image/icon/arrow-right-yellow.svg') }}" alt="next-icons" class="object-contain w-4" />
-                </button>
-            </div>
+                <!-- Foto 2 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-6.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
+                </div>
 
-            <!-- Foto utama -->
-            <div class="relative rounded-xl overflow-hidden shadow-lg mt-10">
-                <img src="{{ asset('image/team-7.jpg') }}" alt="Raditya Wahyu S."
-                    class="w-full h-[460px] object-cover rounded-xl" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[45%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                <!-- Foto 3 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-5.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-white px-5 pb-6">
-                    <h4 class="text-2xl font-semibold mb-1">Raditya Wahyu S.</h4>
-                    <p class="text-sm text-gray-200">Ketua LSP</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- FOTO-FOTO KECIL (DIGABUNG UNTUK MOBILE & TABLET) -->
-        <div
-            class="lg:hidden grid grid-cols-2 md:grid-cols-3 md:gap-x-[30px] gap-x-[14px] md:gap-y-[14px] gap-y-[16.67px] pb-[6px]">
-            <!-- Foto 1 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-1.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                <!-- Foto 4 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-2.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
 
-            <!-- Foto 2 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-6.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                <!-- Foto 5 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-4.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
 
-            <!-- Foto 3 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-5.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
-
-            <!-- Foto 4 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-2.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                <!-- Foto 6 -->
+                <div class="relative overflow-hidden rounded-lg">
+                    <img src="{{ asset('image/team-3.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
+                        <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
+                        <p class="text-xs text-gray-200">Dewan Pengarah</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Foto 5 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-4.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+            <!-- TAMPILAN DESKTOP -->
+            <div class="hidden lg:flex items-center justify-center relative z-20">
+                <!-- Shadow kiri & kanan -->
+                <!-- <div id="left-shadow"
+                    class="absolute left-0 top-0 w-[150px] h-full bg-gradient-to-r from-white via-white/70 to-transparent z-30 transition-opacity duration-300">
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
+                <div id="right-shadow"
+                    class="absolute right-0 top-0 w-[150px] h-full bg-gradient-to-l from-white via-white/70 to-transparent z-30 transition-opacity duration-300">
+                </div> -->
 
-            <!-- Foto 6 -->
-            <div class="relative overflow-hidden rounded-lg">
-                <img src="{{ asset('image/team-3.jpg') }}" alt="" class="w-full h-[240px] object-cover rounded-lg" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full text-white pb-3 px-3">
-                    <h4 class="text-sm font-semibold mb-[2px]">Raditya Wahyu S.</h4>
-                    <p class="text-xs text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TAMPILAN DESKTOP -->
-        <div class="hidden lg:flex items-center justify-center relative z-20">
-            <!-- Shadow kiri & kanan -->
-            <!-- <div id="left-shadow"
-                class="absolute left-0 top-0 w-[150px] h-full bg-gradient-to-r from-white via-white/70 to-transparent z-30 transition-opacity duration-300">
-            </div>
-            <div id="right-shadow"
-                class="absolute right-0 top-0 w-[150px] h-full bg-gradient-to-l from-white via-white/70 to-transparent z-30 transition-opacity duration-300">
-            </div> -->
-
-            <!-- Kiri paling luar -->
-            <div class="relative group flex justify-center items-center overflow-hidden rounded-lg side-left-outer">
-                <img src="{{ asset('image/team-3.jpg') }}" alt=""
-                    class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
-                    <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
-                    <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
-
-            <!-- Kiri (2 foto vertikal) -->
-            <div class="flex flex-col justify-center items-end gap-4 ml-7">
-                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
-                    <img src="{{ asset('image/team-1.jpg') }}" alt=""
+                <!-- Kiri paling luar -->
+                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg side-left-outer">
+                    <img src="{{ asset('image/team-3.jpg') }}" alt=""
                         class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
                     <div
                         class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
@@ -487,49 +478,79 @@
                         <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
                     </div>
                 </div>
-                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
-                    <img src="{{ asset('image/team-6.jpg') }}" alt=""
-                        class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
-                    <div
-                        class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
-                        <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
-                        <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Tengah -->
-            <div class="relative rounded-xl overflow-hidden mx-[30px] shadow-lg">
-                <img src="{{ asset('image/team-7.jpg') }}" alt="Raditya Wahyu S."
-                    class="w-[428px] h-[580px] object-cover" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
+                <!-- Kiri (2 foto vertikal) -->
+                <div class="flex flex-col justify-center items-end gap-4 ml-7">
+                    <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="{{ asset('image/team-1.jpg') }}" alt=""
+                            class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
+                            <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
+                            <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
+                        </div>
+                    </div>
+                    <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="{{ asset('image/team-6.jpg') }}" alt=""
+                            class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
+                            <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
+                            <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="absolute bottom-0 left-0 w-full text-white">
-                    <h4 class="text-lg font-semibold mb-4 pl-6">Raditya Wahyu S.</h4>
-                    <p class="text-sm pl-6 text-gray-200 mb-[40px]">Ketua LSP</p>
-                </div>
-            </div>
 
-            <!-- Kanan -->
-            <div class="flex flex-col justify-center items-start gap-4 mr-7">
-                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
-                    <img src="{{ asset('image/team-5.jpg') }}" alt=""
-                        class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
+                <!-- Tengah -->
+                <div class="relative rounded-xl overflow-hidden mx-[30px] shadow-lg">
+                    <img src="{{ asset('image/team-7.jpg') }}" alt="Raditya Wahyu S."
+                        class="w-[428px] h-[580px] object-cover" />
                     <div
-                        class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
+                        class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent">
                     </div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
-                        <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
-                        <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
+                    <div class="absolute bottom-0 left-0 w-full text-white">
+                        <h4 class="text-lg font-semibold mb-4 pl-6">Raditya Wahyu S.</h4>
+                        <p class="text-sm pl-6 text-gray-200 mb-[40px]">Ketua LSP</p>
                     </div>
                 </div>
-                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
-                    <img src="{{ asset('image/team-2.jpg') }}" alt=""
+
+                <!-- Kanan -->
+                <div class="flex flex-col justify-center items-start gap-4 mr-7">
+                    <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="{{ asset('image/team-5.jpg') }}" alt=""
+                            class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
+                            <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
+                            <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
+                        </div>
+                    </div>
+                    <div class="relative group flex justify-center items-center overflow-hidden rounded-lg">
+                        <img src="{{ asset('image/team-2.jpg') }}" alt=""
+                            class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
+                            <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
+                            <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanan paling luar -->
+                <div class="relative group flex justify-center items-center overflow-hidden rounded-lg side-right-outer">
+                    <img src="{{ asset('image/team-4.jpg') }}" alt=""
                         class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
                     <div
                         class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
@@ -541,254 +562,231 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Kanan paling luar -->
-            <div class="relative group flex justify-center items-center overflow-hidden rounded-lg side-right-outer">
-                <img src="{{ asset('image/team-4.jpg') }}" alt=""
-                    class="w-[200px] h-[230px] rounded-lg object-cover transition duration-300 group-hover:scale-105" />
-                <div
-                    class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full text-white opacity-0 group-hover:opacity-100 transition pb-5">
-                    <h4 class="text-base font-semibold mb-2 pl-6">Raditya Wahyu S.</h4>
-                    <p class="text-sm pl-6 text-gray-200">Dewan Pengarah</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="relative bg-white z-50">
-      <div class="w-full px-[16px] md:px-[45px] lg:px-[80px] py-16">
-        <p class="text-gray-400 text-sm md:text-base mb-6 text-center">FAQ</p>
+        <div class="w-full px-[16px] md:px-[45px] lg:px-[80px] py-16">
+            <p class="text-gray-400 text-sm md:text-base mb-6 text-center">FAQ</p>
 
-        <!-- Judul - Centered -->
-        <div class="max-w-3xl mx-auto text-center mb-12">
-          <h2 class="text-[28px] md:text-[36px] lg:text-[44px] font-bold leading-[120%] text-neutral-900">Jawaban Ringkas untuk Semua Pertanyaan Anda</h2>
+            <!-- Judul - Centered -->
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-[28px] md:text-[36px] lg:text-[44px] font-bold leading-[120%] text-neutral-900">Jawaban
+                    Ringkas untuk Semua Pertanyaan Anda</h2>
+            </div>
+
+            <!-- ACCORDION - Centered with max width -->
+            <div class="">
+                <div class="divide-y divide-gray-200">
+                    <!-- Item 01 -->
+                    <div class="py-6">
+                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                            <div class="flex gap-4 items-start flex-1">
+                                <span
+                                    class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">01</span>
+                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Mengapa siswa SMK
+                                    perlu mengikuti sertifikasi LSP? </span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                            <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                                <p
+                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] font-medium leading-relaxed">
+                                    Program sertifikasi BNSP melalui LSP SMK/N 1 Purwosari sangat bermanfaat untuk kuliah,
+                                    khususnya saat mencari asesmen lain. Hal ini membuat saya lebih memahami materi dan
+                                    langsung terlibat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 02 -->
+                    <div class="py-6">
+                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                            <div class="flex gap-4 items-start flex-1">
+                                <span
+                                    class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">02</span>
+                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa saja
+                                    persyaratan mengikuti asesmen? </span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                            <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                                <p
+                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
+                                    Persyaratan umumnya meliputi identitas diri, bukti kompetensi, portofolio, dan
+                                    administrasi sesuai skema.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 03 -->
+                    <div class="py-6">
+                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                            <div class="flex gap-4 items-start flex-1">
+                                <span
+                                    class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">03</span>
+                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa perbedaan
+                                    antara sertifikat training biasa dan sertifikat kompetensi dari LSP? </span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                            <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                                <p
+                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
+                                    Sertifikat training hanya menunjukkan mengikuti pelatihan, sedangkan sertifikat
+                                    kompetensi menandakan seseorang telah dinilai kompeten secara resmi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 04 -->
+                    <div class="py-6">
+                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                            <div class="flex gap-4 items-start flex-1">
+                                <span
+                                    class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">04</span>
+                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Berapa lama
+                                    sertifikat kompetensi dari LSP berlaku? </span>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                            <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                                <p
+                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
+                                    Umumnya sertifikat berlaku 2–3 tahun dan bisa diperpanjang jika diperlukan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- ACCORDION - Centered with max width -->
-        <div class="">
-          <div class="divide-y divide-gray-200">
-            <!-- Item 01 -->
-            <div class="py-6">
-              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                <div class="flex gap-4 items-start flex-1">
-                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">01</span>
-                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Mengapa siswa SMK perlu mengikuti sertifikasi LSP? </span>
-                </div>
-                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
-                </svg>
-              </button>
-
-              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
-                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] font-medium leading-relaxed">
-                    Program sertifikasi BNSP melalui LSP SMK/N 1 Purwosari sangat bermanfaat untuk kuliah, khususnya saat mencari asesmen lain. Hal ini membuat saya lebih memahami materi dan langsung terlibat.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 02 -->
-            <div class="py-6">
-              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                <div class="flex gap-4 items-start flex-1">
-                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">02</span>
-                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa saja persyaratan mengikuti asesmen? </span>
-                </div>
-                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
-                </svg>
-              </button>
-
-              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
-                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                    Persyaratan umumnya meliputi identitas diri, bukti kompetensi, portofolio, dan administrasi sesuai skema.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 03 -->
-            <div class="py-6">
-              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                <div class="flex gap-4 items-start flex-1">
-                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">03</span>
-                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa perbedaan antara sertifikat training biasa dan sertifikat kompetensi dari LSP? </span>
-                </div>
-                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
-                </svg>
-              </button>
-
-              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
-                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                    Sertifikat training hanya menunjukkan mengikuti pelatihan, sedangkan sertifikat kompetensi menandakan seseorang telah dinilai kompeten secara resmi.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 04 -->
-            <div class="py-6">
-              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                <div class="flex gap-4 items-start flex-1">
-                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">04</span>
-                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Berapa lama sertifikat kompetensi dari LSP berlaku? </span>
-                </div>
-                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
-                </svg>
-              </button>
-
-              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
-                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">Umumnya sertifikat berlaku 2–3 tahun dan bisa diperpanjang jika diperlukan.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Testimoni Section -->
-    <!-- .testimonial-container {
-                transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-              }
 
-              .testimonial-card {
-                opacity: 0;
-                transition: opacity 0.6s ease;
-              }
-
-              .testimonial-card.active {
-                opacity: 1;
-              } -->
-    <section class="relative">
-
-        <div class="w-full bg-white shadow-sm pt-[60px] md:pt-[80px] pb-[90px] md:pb-[193px] px-[16px] md:px-[48px]">
-            <!-- Header -->
-            <div class="text-center mb-16">
-                <p class="text-[#9CA3AF] text-[20px] font-medium mb-2 tracking-wider">Testimoni</p>
-                <h2 class="text-[30px] md:text-4xl font-bold text-gray-900 leading-tight">Pengalaman Nyata dari Mereka yang
-                    Telah <br class="hidden md:block" />Melalui Prosesnya</h2>
-            </div>
+    <section id="testimoni" class="relative bg-white z-50">
+        <div class="w-full px-[16px] md:px-[45px] lg:px-[80px] py-16">
+            <p class="text-[#9CA3AF] text-[20px] font-medium mb-2 tracking-wider text-center">Testimoni</p>
+            <h2 class="text-center text-[30px] md:text-4xl font-bold text-gray-900 leading-tight mb-10">
+                Pengalaman Nyata dari Mereka yang Telah <br class="hidden md:block" />Melalui Prosesnya
+            </h2>
 
             <!-- Slider Container -->
             <div class="relative overflow-hidden mb-12">
                 <div class="testimonial-container flex" id="testimonialContainer">
                     <!-- Slide 1 -->
-                    <div class="testimonial-card active min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2">
+                    <div
+                        class="testimonial-card min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2 transition-opacity duration-500">
                         <!-- Card 1 -->
                         <div class="flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
-                                </div>
+                                <img src="{{ asset('image/logo/logo-2.svg') }}" alt="Avatar" class="w-16 h-16 object-contain">
+
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">SMKN 1 Tembarak</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">SMKN 1 Tembarak</h3>
                                     <p class="text-sm text-gray-500">Mitra Kerja</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">
-                                Program sertifikasi BNSP melalui LSP SMKN 1 Purwosari sangat bermanfaat untuk kuliah,
-                                khususnya saat menjadi asisten lab. Hal ini membuat saya lebih memahami materi dan langsung
-                                terlibat.
-                            </p>
+                            <p class="text-[#0c0c0c] leading-relaxed">Program sertifikasi BNSP melalui LSP SMKN 1 Purwosari
+                                sangat bermanfaat untuk kuliah, khususnya saat menjadi asisten lab. Hal ini membuat saya
+                                lebih memahami materi dan langsung terlibat.</p>
                         </div>
 
                         <!-- Card 2 -->
                         <div
                             class="hidden lg:block flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
+                                <div class="">
+                                    <img src="{{ asset('image/testi-2.jpg') }}" alt="Avatar" class="h-16 w-16 rounded-full object-cover">
                                 </div>
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">Widya D. Safira</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">Widya D. Safira</h3>
                                     <p class="text-sm text-gray-500">Peserta</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">
-                                Program sertifikasi BNSP melalui LSP SMKN 1 Purwosari sangat bermanfaat untuk kuliah,
-                                khususnya saat menjadi asisten lab. Hal ini membuat saya lebih memahami materi dan langsung
-                                terlibat.
-                            </p>
+                            <p class="text-[#0c0c0c] leading-relaxed">Program sertifikasi BNSP melalui LSP SMKN 1 Purwosari
+                                sangat bermanfaat untuk kuliah, khususnya saat menjadi asisten lab. Hal ini membuat saya
+                                lebih memahami materi dan langsung terlibat.</p>
                         </div>
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="testimonial-card active min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2">
+                    <div
+                        class="testimonial-card min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2 transition-opacity duration-500">
                         <!-- Card 3 -->
                         <div class="flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
-                                </div>
+                                <img src="{{ asset('image/testi-4.jpg') }}" alt="Avatar" class="h-16 w-16 rounded-full object-cover">
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">Ahmad Rizki</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">Ahmad Rizki</h3>
                                     <p class="text-sm text-gray-500">Alumni</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">
-                                Sertifikasi ini memberikan nilai tambah yang signifikan dalam karir saya. Materi yang
-                                diajarkan sangat aplikatif dan langsung bisa diterapkan di dunia kerja. Terima kasih LSP
-                                SMKN 1 Purwosari!
-                            </p>
+                            <p class="text-[#0c0c0c] leading-relaxed">Sertifikasi ini memberikan nilai tambah yang
+                                signifikan dalam karir saya. Materi yang diajarkan sangat aplikatif dan langsung bisa
+                                diterapkan di dunia kerja. Terima kasih LSP SMKN 1 Purwosari!</p>
                         </div>
 
                         <!-- Card 4 -->
                         <div
                             class="hidden lg:block flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
-                                </div>
+                                <img src="{{ asset('image/testi-3.jpg') }}" alt="Avatar" class="h-16 w-16 rounded-full object-cover">
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">Siti Nurhaliza</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">Siti Nurhaliza</h3>
                                     <p class="text-sm text-gray-500">Peserta</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">Pengalaman belajar yang luar biasa! Instruktur sangat
+                            <p class="text-[#0c0c0c] leading-relaxed">Pengalaman belajar yang luar biasa! Instruktur sangat
                                 profesional dan sabar dalam membimbing. Saya merasa lebih percaya diri dengan kompetensi
                                 yang saya miliki sekarang.</p>
                         </div>
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="testimonial-card active min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2">
+                    <div
+                        class="testimonial-card min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-2 transition-opacity duration-500">
                         <!-- Card 5 -->
                         <div class="flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
-                                </div>
+                               <img src="{{ asset('image/testi-5.jpg') }}" alt="Avatar" class="h-16 w-16 rounded-full object-cover">
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">Budi Santoso</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">Budi Santoso</h3>
                                     <p class="text-sm text-gray-500">Industri Partner</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">Lulusan dari program sertifikasi ini menunjukkan
+                            <p class="text-[#0c0c0c] leading-relaxed">Lulusan dari program sertifikasi ini menunjukkan
                                 kompetensi yang sangat baik. Mereka siap kerja dan memiliki etos yang tinggi. Kami sangat
                                 puas dengan kualitas SDM yang dihasilkan.</p>
                         </div>
@@ -797,29 +795,22 @@
                         <div
                             class="hidden lg:block flex-1 border border-[#F2F3F6] rounded-xl p-8 transition-all hover:shadow-md">
                             <div class="flex items-center gap-4 mb-6">
-                                <div
-                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center overflow-hidden flex-shrink-0">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                                    </svg>
-                                </div>
+                               <img src="{{ asset('image/testi-6.jpg') }}" alt="Avatar" class="h-16 w-16 rounded-full object-cover">
                                 <div>
-                                    <h3 class="text-lg font-semibold text-[0c0c0c]">Rina Kusuma</h3>
+                                    <h3 class="text-lg font-semibold text-[#0c0c0c]">Rina Kusuma</h3>
                                     <p class="text-sm text-gray-500">Peserta</p>
                                 </div>
                             </div>
-                            <p class="text-[0c0c0c] leading-relaxed">
-                                Program yang sangat terstruktur dan mudah dipahami. Fasilitas lengkap dan dukungan dari tim
-                                LSP sangat membantu proses pembelajaran. Highly recommended untuk yang ingin meningkatkan
-                                skill!
-                            </p>
+                            <p class="text-[#0c0c0c] leading-relaxed">Program yang sangat terstruktur dan mudah dipahami.
+                                Fasilitas lengkap dan dukungan dari tim LSP sangat membantu proses pembelajaran. Highly
+                                recommended untuk yang ingin meningkatkan skill!</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Dots Navigation -->
-            <div class="flex justify-center gap-2" id="sliderDots"></div>
+                <!-- Dots Navigation -->
+                <div class="flex justify-center gap-2 mt-6" id="sliderDots"></div>
+            </div>
         </div>
     </section>
 
@@ -922,6 +913,69 @@
             counters.forEach(animateCount);
         }
 
+        // Testimoni slider (versi translateX dengan dots & auto-slide)
+        (function () {
+            const container = document.getElementById('testimonialContainer');
+            const dotsContainer = document.getElementById('sliderDots');
+            if (!container || !dotsContainer) return;
+
+            const cards = Array.from(container.querySelectorAll('.testimonial-card'));
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            // create dots
+            cards.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = index === 0
+                    ? 'w-8 h-2 rounded-full bg-gray-800 cursor-pointer transition-all'
+                    : 'w-2 h-2 rounded-full bg-gray-300 cursor-pointer transition-all hover:bg-gray-400';
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = Array.from(dotsContainer.children);
+
+            function updateSlider() {
+                container.style.transform = `translateX(-${currentIndex * 100}%)`;
+                cards.forEach((card, i) => {
+                    card.classList.toggle('opacity-100', i === currentIndex);
+                    card.classList.toggle('opacity-0', i !== currentIndex);
+                });
+                dots.forEach((dot, i) => {
+                    dot.className = i === currentIndex
+                        ? 'w-8 h-2 rounded-full bg-gray-800 cursor-pointer transition-all'
+                        : 'w-2 h-2 rounded-full bg-gray-300 cursor-pointer transition-all hover:bg-gray-400';
+                });
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % cards.length;
+                updateSlider();
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                updateSlider();
+                resetAutoSlide();
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+
+            // pause on hover
+            const viewport = container.parentElement;
+            viewport.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+            viewport.addEventListener('mouseleave', startAutoSlide);
+
+            // init
+            updateSlider();
+            startAutoSlide();
+        })();
 
     </script>
 
