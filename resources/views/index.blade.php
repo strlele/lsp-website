@@ -113,7 +113,7 @@
 
                                                     <!-- Tombol Detail -->
                                                     <div class="flex items-center gap-2">
-                                                        <a href="#"
+                                                        <a href="{{ route('berita.show', ['berita' => $latestBerita->slug]) }}"
                                                             class="inline-flex items-center gap-2 text-xs text-white font-medium hover:text-white transition">
                                                             Lihat Detail
                                                             <img src="{{ asset('image/icon/arrow-sm.svg') }}" alt="arrow-sm">
