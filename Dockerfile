@@ -50,8 +50,8 @@ COPY . .
 # Copy Composer vendor directory from Stage 1
 COPY --from=vendor /app/vendor ./vendor
 
-# Copy built assets from Stage 2 into public/build (Vite default)
-COPY --from=assets /app/dist ./public/build
+# Copy built assets from Stage 2 into public/build (Laravel Vite default)
+COPY --from=assets /app/public/build ./public/build
 
 # Configure Apache to serve from public/ and enable rewrites
 # Update DocumentRoot and Directory directives
