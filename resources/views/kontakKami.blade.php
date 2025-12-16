@@ -4,7 +4,7 @@
     <div class="w-full">
         <x-hero-title :src="asset('image/skema-hero.jpg')" alt="Profile Image" :title="'Kontak <br />Kami'" />
 
-        <div class="max-w-7xl mx-auto px-[16px] md:px-[48px] py-10 md:py-14 lg:py-16">
+        <div class="px-[16px] md:px-[48px] py-10 md:py-14 lg:py-16">
             <p class="text-gray-400 text-sm md:text-base">Kontak Kami</p>
             <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-10 lg:gap-16">
 
@@ -28,7 +28,7 @@
                             <div class="flex flex-col gap-2">
                                 <h3 class="font-semibold text-gray-900">Email</h3>
                                 <a href="mailto:informasi@smkn1purwosari.sch.id"
-                                    class="block text-gray-500 break-words max-w-[240px]">informasi@smkn1purwosari.sch.id</a>
+                                    class="block text-gray-500 break-words">informasi@smkn1purwosari.sch.id</a>
                             </div>
                             <!-- Lokasi -->
                             <div class="flex flex-col gap-2">
