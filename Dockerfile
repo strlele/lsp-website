@@ -33,7 +33,7 @@ WORKDIR /var/www/html
 # Note: keep this minimal; add/remove as your app requires
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       libzip4 libzip-dev libonig-dev unzip git \
+       unzip git \
     && docker-php-ext-configure opcache --enable-opcache \
     && docker-php-ext-install -j"$(nproc)" \
        pdo_mysql \
