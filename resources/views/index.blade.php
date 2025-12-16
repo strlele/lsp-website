@@ -559,128 +559,103 @@
 
     <!-- FAQ Section -->
     <section class="relative bg-white z-50">
-        <div class="w-full px-[16px] md:px-[45px] lg:px-[80px] py-16">
-            <p class="text-gray-400 text-sm md:text-base mb-6 text-center">FAQ</p>
+      <div class="w-full px-[16px] md:px-[45px] lg:px-[80px] py-16">
+        <p class="text-gray-400 text-sm md:text-base mb-6 text-center">FAQ</p>
 
-            <!-- Judul - Centered -->
-            <div class="max-w-3xl mx-auto text-center mb-12">
-                <h2 class="text-[28px] md:text-[36px] lg:text-[44px] font-bold leading-[120%] text-neutral-900">Jawaban
-                    Ringkas untuk Semua Pertanyaan Anda</h2>
-            </div>
-
-            <!-- ACCORDION - Centered with max width -->
-            <div class="">
-                <div class="divide-y divide-gray-200">
-                    <!-- Item 01 -->
-                    <div class="py-6">
-                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                            <div class="flex items-start flex-1 gap-6 md:gap-8">
-                                <span class="text-[#0c0c0c] font-medium text-base md:text-2xl flex-shrink-0">01</span>
-                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Mengapa siswa SMK
-                                    perlu mengikuti sertifikasi LSP? </span>
-                            </div>
-                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                            <div class="mt-3 pl-10 md:pl-12">
-                                <p
-                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                                    Program sertifikasi BNSP melalui LSP SMK/N 1 Purwosari sangat bermanfaat untuk kuliah,
-                                    khususnya saat mencari asesmen lain. Hal ini membuat saya lebih memahami materi dan
-                                    langsung terlibat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 02 -->
-                    <div class="py-6">
-                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                            <div class="flex items-start flex-1 gap-6 md:gap-8">
-                                <span class="text-[#0c0c0c] font-medium text-base md:text-2xl flex-shrink-0">02</span>
-                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa saja
-                                    persyaratan mengikuti asesmen? </span>
-                            </div>
-                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                            <div class="mt-3 pl-10 md:pl-12">
-                                <p
-                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                                    Persyaratan umumnya meliputi identitas diri, bukti kompetensi, portofolio, dan
-                                    administrasi sesuai skema.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 03 -->
-                    <div class="py-6">
-                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                            <div class="flex items-start flex-1 gap-6 md:gap-8">
-                                <span class="text-[#0c0c0c] font-medium text-base md:text-2xl flex-shrink-0">03</span>
-                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa perbedaan
-                                    antara sertifikat training biasa dan sertifikat kompetensi dari LSP? </span>
-                            </div>
-                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                            <div class="mt-3 pl-10 md:pl-12">
-                                <p
-                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                                    Sertifikat training hanya menunjukkan mengikuti pelatihan, sedangkan sertifikat
-                                    kompetensi menandakan seseorang telah dinilai kompeten secara resmi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 04 -->
-                    <div class="py-6">
-                        <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
-                            <div class="flex items-start flex-1 gap-6 md:gap-8">
-                                <span class="text-[#0c0c0c] font-medium text-base md:text-2xl flex-shrink-0">04</span>
-                                <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Berapa lama
-                                    sertifikat kompetensi dari LSP berlaku? </span>
-                            </div>
-                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
-                            <div class="mt-3 pl-10 md:pl-12">
-                                <p
-                                    class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
-                                    Umumnya sertifikat berlaku 2–3 tahun dan bisa diperpanjang jika diperlukan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Judul - Centered -->
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-[28px] md:text-[36px] lg:text-[44px] font-bold leading-[120%] text-neutral-900">Jawaban Ringkas untuk Semua Pertanyaan Anda</h2>
         </div>
+
+        <!-- ACCORDION - Centered with max width -->
+        <div class="">
+          <div class="divide-y divide-gray-200">
+            <!-- Item 01 -->
+            <div class="py-6">
+              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                <div class="flex gap-4 items-start flex-1">
+                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">01</span>
+                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Mengapa siswa SMK perlu mengikuti sertifikasi LSP? </span>
+                </div>
+                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] font-medium leading-relaxed">
+                    Program sertifikasi BNSP melalui LSP SMK/N 1 Purwosari sangat bermanfaat untuk kuliah, khususnya saat mencari asesmen lain. Hal ini membuat saya lebih memahami materi dan langsung terlibat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 02 -->
+            <div class="py-6">
+              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                <div class="flex gap-4 items-start flex-1">
+                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">02</span>
+                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa saja persyaratan mengikuti asesmen? </span>
+                </div>
+                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
+                    Persyaratan umumnya meliputi identitas diri, bukti kompetensi, portofolio, dan administrasi sesuai skema.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="py-6">
+              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                <div class="flex gap-4 items-start flex-1">
+                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">03</span>
+                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Apa perbedaan antara sertifikat training biasa dan sertifikat kompetensi dari LSP? </span>
+                </div>
+                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">
+                    Sertifikat training hanya menunjukkan mengikuti pelatihan, sedangkan sertifikat kompetensi menandakan seseorang telah dinilai kompeten secara resmi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="py-6">
+              <button class="flex items-start justify-between w-full gap-4 faq-btn text-left">
+                <div class="flex gap-4 items-start flex-1">
+                  <span class="md:w-[40px] lg:w-[120px] text-[#0c0c0c] font-semibold text-base md:text-2xl flex-shrink-0">04</span>
+                  <span class="text-base md:text-2xl font-semibold text-[#0c0c0c] flex-1"> Berapa lama sertifikat kompetensi dari LSP berlaku? </span>
+                </div>
+                <svg class="w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                <div class="mt-3 pl-[calc(2rem)] md:pl-[calc(40px+1rem)] lg:pl-[calc(120px+1rem)]">
+                  <p class="opacity-0 transition-opacity duration-300 text-gray-600 text-sm md:text-[20px] text-medium leading-relaxed">Umumnya sertifikat berlaku 2–3 tahun dan bisa diperpanjang jika diperlukan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- Testimoni Section -->
     <!-- .testimonial-container {
                 transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);

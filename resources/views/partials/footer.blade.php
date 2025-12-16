@@ -71,19 +71,19 @@
                     <p class="text-base text-gray-400 lg:mt-0 md:mt-auto mb-4">Sosial Media</p>
                     <div class="flex gap-3 lg:mt-auto md:mt-0">
                         <a href="#"
-                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
                             <img src="{{ asset('image/icon/linkedin.svg') }}" alt="LinkedIn" class="w-5 h-5">
                         </a>
                         <a href="#"
-                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
                             <img src="{{ asset('image/icon/facebook.svg') }}" alt="Facebook">
                         </a>
                         <a href="#"
-                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
                             <img src="{{ asset('image/icon/instagram.svg') }}" alt="Instagram">
                         </a>
                         <a href="#"
-                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition">
+                            class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
                             <img src="{{ asset('image/icon/youtube.svg') }}" alt="YouTube">
                         </a>
                     </div>
