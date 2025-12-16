@@ -6,44 +6,53 @@
 @section('title', 'Login | LSP SMKN 1 Purwosari')
 
 @section('content')
-    <div class="min-h-screen bg-cover bg-center flex items-center justify-center px-4"
-        style="background-image: url('{{ asset('image/hero.webp') }}')">
-        <div class="w-full max-w-xl bg-white rounded-3xl shadow-xl">
-            <div class="p-6 sm:p-8">
-                <div class="flex items-start gap-4 mb-6">
-                    <img src="{{ asset('image/logo/logo.svg') }}" alt="Logo" class="h-10 w-10 object-contain">
-                    <div class="leading-tight">
-                        <div class="text-lg font-semibold"><span class="text-[#1FA1FF]">LSP</span> SMKN 1</div>
-                        <div class="text-gray-600 text-sm">Purwosari</div>
-                    </div>
-                </div>
+    <div class="relative min-h-screen flex items-center justify-center px-4 py-10 overflow-hidden">
+        <!-- Background image + gradient overlay -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('image/hero.webp') }}')"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50"></div>
+            <!-- Accent blobs -->
+            <div class="absolute -top-24 -left-24 w-[360px] h-[360px] bg-yellow-400/30 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -right-24 w-[320px] h-[320px] bg-amber-500/20 rounded-full blur-3xl"></div>
+        </div>
 
-                <form action="{{ route('login') }}" method="POST" class="space-y-5">
+        <!-- Card -->
+        <div class="relative w-full max-w-xl">
+            <div class="rounded-3xl p-[1px] bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 shadow-2xl">
+                <div class="rounded-[22px] bg-white/95 backdrop-blur-xl p-6 sm:p-8">
+                    <!-- Logo & Heading -->
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="{{ asset('image/logo/logo-2.svg') }}" class="h-14 mb-3" alt="Logo">
+                        <h1 class="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900">Selamat Datang</h1>
+                        <p class="text-neutral-600 text-sm mt-1">Silakan login untuk melanjutkan</p>
+                    </div>
+
+                    <form action="{{ route('login') }}" method="POST" class="space-y-5" novalidate>
                     @csrf
 
                     @if(session('throttle'))
-                        <div class="bg-yellow-50 text-yellow-800 rounded-lg p-3">{{ session('throttle') }}</div>
+                        <div class="bg-yellow-50 text-yellow-800 rounded-lg p-3" role="alert" aria-live="polite">{{ session('throttle') }}</div>
                     @endif
 
                     <div>
-                        <label for="username" class="block text-sm text-gray-800 mb-1">Username</label>
-                        <input id="username" name="username" type="text" value="{{ old('username') }}"
+                        <label for="username" class="block text-sm text-neutral-800 mb-1">Username</label>
+                        <input id="username" name="username" type="text" autocomplete="username" value="{{ old('username') }}"
                             placeholder="Masukkan username"
-                            class="w-full rounded-lg bg-gray-100 border border-gray-200 px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 outline-none"
+                            class="w-full rounded-xl bg-neutral-100 border border-neutral-200 px-4 py-3 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 outline-none transition @error('username') border-red-400/70 focus:ring-red-300 @enderror"
                             required autofocus>
                         @error('username')
-                            <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
+                            <p class="mt-1 text-sm text-red-600" role="alert" aria-live="polite">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <div>
-                        <label for="password" class="block text-sm text-gray-800 mb-1">Password</label>
+                        <label for="password" class="block text-sm text-neutral-800 mb-1">Password</label>
                         <div class="relative">
-                            <input id="password" name="password" type="password" placeholder="Masukkan password"
-                                class="w-full rounded-lg bg-gray-100 border border-gray-200 px-4 py-3 pr-12 focus:ring-2 focus:ring-blue-400 focus:border-blue-400 outline-none"
+                            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Masukkan password"
+                                class="w-full rounded-xl bg-neutral-100 border border-neutral-200 px-4 py-3 pr-12 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 outline-none transition @error('password') border-red-400/70 focus:ring-red-300 @enderror"
                                 required>
                             <button type="button" onclick="togglePwd()"
-                                class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500 hover:text-gray-700">
+                                class="absolute inset-y-0 right-0 px-3 flex items-center text-neutral-500 hover:text-neutral-700">
                                 <svg id="eye-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,13 +68,14 @@
                             </button>
                         </div>
                         @error('password')
-                            <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
+                            <p class="mt-1 text-sm text-red-600" role="alert" aria-live="polite">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <button type="submit"
-                        class="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-semibold rounded-lg py-3 transition-colors">Masuk</button>
+                        class="w-full rounded-xl py-[13px] font-semibold text-white bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 shadow-lg hover:opacity-95 active:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">Masuk</button>
                 </form>
+                </div>
             </div>
         </div>
     </div>
