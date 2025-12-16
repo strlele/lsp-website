@@ -3,7 +3,7 @@
 @section('content')
     <div>
         <x-hero-title :src="asset('image/skema-hero.jpg')" alt="Profile Image" :title="'Skema'" />
-        <div class="bg-white max-w-7xl mx-auto px-[16px] md:px-[45px] lg:px-[80px] py-10 md:py-14 lg:py-16">
+        <div class="bg-white px-[16px] md:px-[48px] py-10 md:py-14 lg:py-16">
             <!-- Header Section -->
             <div class="max-w-7xl mx-auto mb-8 lg:mb-12">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">

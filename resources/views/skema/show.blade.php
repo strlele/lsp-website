@@ -3,9 +3,9 @@
     <!-- Header -->
      <x-hero-title :src="asset('image/skema-hero.jpg')" alt="Profile Image" :title="'Profile Singkat<br />Kami'" />
 
-    <div class="bg-white rounded-2xl sticky mt-6 mx-4 md:mx-12 z-10">
-        <div class="flex flex-col justify-center w-full px-4 sm:px-6 lg:px-8 py-4">
-            <a href="{{ route('skema.index') }}" class="inline-flex items-center gap-2 px-3 py-2 bg-[#F6F7F4] rounded-[12px] mb-3 w-max text-[#022512]">
+    <div class="bg-white px-[16px] md:px-[48px] py-10 md:py-14 lg:py-16">
+        <div class="flex flex-col justify-center w-full">
+            <a href="{{ route('skema.index') }}" class="inline-flex items-center gap-2 px-3 py-2 bg-[#F6F7F4] rounded-[12px] mb-6 w-max text-[#022512]">
                 <img src="{{ asset('image/icon/arrow-left.svg') }}" class="w-5 h-5" alt="back" />
                 <span class="text-[14px] font-medium">Kembali</span>
             </a>
